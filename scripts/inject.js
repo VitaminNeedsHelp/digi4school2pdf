@@ -237,9 +237,9 @@
         function download_svg(page) {
             return new Promise((resolve, reject) => {
 
-                console.log(`${base_url}${page}/${page}.svg`)
-                http.open("GET", `${base_url}${page}/${page}.svg`);
-                console.log(`${base_url}${page}/${page}.svg`)
+                console.log(`${base_url}${page}.svg`)
+                http.open("GET", `${base_url}${page}.svg`);
+                console.log(`${base_url}${page}.svg`)
                 http.onreadystatechange = () => {
                     // cancel callback if request hasnt finished
                     if (http.readyState !== XMLHttpRequest.DONE)
