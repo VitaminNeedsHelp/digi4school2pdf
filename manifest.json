@@ -1,10 +1,10 @@
 {
 
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "digi4school to pdf",
   "version": "1.6",
 
-  "author": "strukteon",
+  "author": "strukteon and vitamin",
 
   "description": "Converts digi4school books to pdf so they can be used offline.",
   "homepage_url": "https://github.com/strukteon/digi4school-to-pdf",
@@ -20,7 +20,7 @@
     "tabs"
   ],
 
-  "browser_action": {
+  "action": {
     "default_icon": "assets/icon-64.png",
     "default_title": "digi4school to pdf",
     "default_popup": "popup/popup.html"
