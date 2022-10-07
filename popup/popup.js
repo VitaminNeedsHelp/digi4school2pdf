@@ -28,7 +28,7 @@ browser.tabs.query({currentWindow: true, active: true})
 });
 
 btn.onclick = () => {
-    browser.tabs.executeScript({file: "/libraries/browser-polyfill.min.js"})
+    chrome.tabs.executeScript({injection: { files: "/libraries/browser-polyfill.min.js" }})
     .then(() => browser.tabs.insertCSS({file: "/libraries/materialize/materialize.min.css"}))
     .then(() => browser.tabs.executeScript({file: "/libraries/materialize/materialize.min.js"}))
     .then(() => browser.tabs.insertCSS({file: "/scripts/inject.css"}))

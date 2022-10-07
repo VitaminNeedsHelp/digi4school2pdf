@@ -15,10 +15,7 @@
     "512": "assets/icon-512.png"
   },
 
-  "permissions": [
-    "activeTab",
-    "tabs"
-  ],
+  "permissions": ["activeTab", "tabs", "scripting"],
 
   "action": {
     "default_icon": "assets/icon-64.png",
@@ -34,11 +31,6 @@
     ]
   }],
 
-  "background": {
-    "scripts": [
-      "libraries/browser-polyfill.min.js",
-      "scripts/background.js"
-    ]
-  }
+  "background": {"service_workers": ["libraries/browser-polyfill.min.js", "scripts/background.js"]}
 
 }
